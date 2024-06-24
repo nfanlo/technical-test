@@ -1,13 +1,13 @@
 # technical-test
 
-### Description
+## Description
 This project consists of two parts. 
 
 The first part involves training an image classifier for cats and dogs after performing pre-processing and testing different classifiers and hyperparameters. The goal is to select the best classifier based on the accuracy evaluation metric.
 
-The second part involves the analysis and forecasting of a time series of bicycle demand. The dataset is available at the following link:
+The second part involves the analysis and forecasting of a time series of bicycle demand based on MAE and MSE. The dataset is available at the following link:
 
-#### **Dataset[Dataset-part2](https://www.kaggle.com/competitions/bike-sharing-demand/data)**
+#### **Download [Dataset-part2](https://www.kaggle.com/competitions/bike-sharing-demand/data)**
 
 ### Dev Instructions:
 To clone the repository navigate to the destination folder in the terminal and clone the repository type the following on terminal:
@@ -28,7 +28,7 @@ For macOS/Windows:
 
 ```
 conda env create -f env.yml
-````
+```
 
 ### Part 1. Image Classification (Cat vs Dog):
 
