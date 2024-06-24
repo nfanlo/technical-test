@@ -1,0 +1,13 @@
+#Cambiar segun los requisitos de produccion
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+.idea
+.vscode
+*.egg-info
+dist
+build
