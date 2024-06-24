@@ -43,6 +43,7 @@ In the `technical-test/part1` directory, you will find:
 Run the following command in the `production` directory to build the Docker image:
 ```bash
 docker build -t image-classification-app .
+```
 
 ### Part 2. Analysis and Forecasting (Bicycle demand)
 
