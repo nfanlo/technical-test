@@ -3,7 +3,7 @@
 ## Description
 This project consists of two parts. 
 
-The first part involves training an image classifier for cats and dogs after performing pre-processing and testing different classifiers and hyperparameters. The goal is to select the best classifier based on the accuracy evaluation metric.
+The first part 
 
 The second part involves the analysis and forecasting of a time series of bicycle demand based on MAE and MSE. The dataset is available at the following link:
 
@@ -30,13 +30,7 @@ For macOS/Windows:
 conda env create -f env.yml
 ```
 
-### Part 1. Image Classification (Cat vs Dog):
-
-In the `technical-test/part1` directory, you will find:
-- The `data` folder, which contains the images used for training, validation, and testing.
-- The `models` folder, which contains the trained models with the best hyperparameter configuration selected during validation.
-- The `production` folder, which contains the files needed for production deployment, including the Docker container setup to generate the Docker image for the project, the `requirements.txt` file listing the packages used in the project, and the `predict.py` script for predicting new images using the best selected model (InceptionV3).
-- The `part1-classification.ipynb` notebook, which provides a detailed walkthrough of the entire process of developing the image classification model. This includes data preprocessing steps, exploratory data analysis (EDA), testing various classifiers, tuning hyperparameters, and evaluating the performance of different models. The notebook documents the rationale behind each decision, the methodologies used for improving model accuracy, and the final selection of the best model for deployment.
+### Part 1. 
 
 #### Build the Docker Image
 
