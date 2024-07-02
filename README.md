@@ -3,11 +3,13 @@
 ## Description
 This project consists of two parts. 
 
-The first part 
+The first part involves performing the entire EDA/ETL process for the student achievement data in secondary education from two Portuguese schools, followed by the development of classification models and meta-classifiers based on the first period grade (G1). Subsequently, the necessary scripts and files will be developed to deploy the model into production.
 
-The second part involves the analysis and forecasting of a time series of bicycle demand based on MAE and MSE. The dataset is available at the following link:
+#### **Download [Dataset-part1](cs.uci.edu/dataset/320/student+performance)**
 
-#### **Download [Dataset-part2](https://www.kaggle.com/competitions/bike-sharing-demand/data)**
+The second part involves the analysis and forecasting of a time series of Germany climate dataset bassed on MAE and MSE. The dataset is available at the following link:
+
+#### **Download [Dataset-part2](https://www.kaggle.com/datasets/mnassrib/jena-climate)**
 
 ### Dev Instructions:
 To clone the repository navigate to the destination folder in the terminal and clone the repository type the following on terminal:
@@ -35,8 +37,15 @@ conda env create -f env.yml
 #### Build the Docker Image
 
 Run the following command in the `production` directory to build the Docker image:
+
 ```bash
-docker build -t image-classification-app .
+docker build -t prediction-model
+```
+
+To start the Docker container once created:
+
+```bash
+docker run -v /Users/nfanlo/dev/technical-test/part1/data/test:/app/data/test prediction-model RandomForest /app/data/test/test.csv
 ```
 
 ### Part 2. Analysis and Forecasting (Bicycle demand)
