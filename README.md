@@ -32,7 +32,13 @@ For macOS/Windows:
 conda env create -f env.yml
 ```
 
-### Part 1. 
+### Part 1.
+
+In the `technical-test/part1` directory, you will find:
+- The `data` folder, wich contains the dataset used for analysis and train classification models
+- The `models` folder, which contains the trained models with the best hyperparameter configuration selected during training.
+- The 'part1-school-classifier.ipynb' notebook which contains the analysis of the dataset and the training process of the different models and the corresponding prediction of the one with the best results.
+- The `production` folder, wich contains all files to upload project to production
 
 #### Build the Docker Image
 
@@ -48,7 +54,7 @@ To start the Docker container once created:
 docker run -v /Users/nfanlo/dev/technical-test/part1/data/test:/app/data/test prediction-model RandomForest /app/data/test/test.csv
 ```
 
-### Part 2. Analysis and Forecasting (Bicycle demand)
+### Part 2. Analysis and Forecasting (Climate dataset)
 
 In the `technical-test/part2` directory, you will find:
 - The `data` folder, which contains the dataset used for analysis and forecasting
